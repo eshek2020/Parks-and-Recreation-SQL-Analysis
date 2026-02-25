@@ -26,13 +26,13 @@ This project demonstrates the creation and management of a relational database s
 ## 🏗️ Database Architecture
 The database consists of three primary tables designed to be joined for comprehensive reporting:
 
+
+
 | Table Name | Description | Key Columns |
 | :--- | :--- | :--- |
 | **`employee_demographics`** | Personal information (age, gender, birth date). | `employee_id` (PK) |
 | **`employee_salary`** | Professional data (occupation, salary, dept link). | `employee_id`, `dept_id` |
 | **`parks_departments`** | Department lookup table. | `department_id` (PK) |
-
-[attachment_0](attachment)
 
 ### 🔗 Entity Relationship Logic
 1. **Employee Link:** The `employee_id` serves as the unique identifier linking demographics to salary data.
@@ -42,9 +42,17 @@ The database consists of three primary tables designed to be joined for comprehe
 
 ## 🖼️ Data Preview
 
-### Final Database Snapshot
-*Below is the result of the successfully populated relational database.*
-![Final Database Output](INSERT_YOUR_IMAGE_NAME_HERE.png)
+### 1. Employee Demographics Table
+*Contains personal identifiable information for the department staff.*
+![Demographics Table](INSERT_DEMOGRAPHICS_IMAGE_NAME.png)
+
+### 2. Employee Salary Table
+*Tracks roles, compensation, and departmental assignments.*
+![Salary Table](INSERT_SALARY_IMAGE_NAME.png)
+
+### 3. Parks Departments Table
+*The lookup table for all official Pawnee departments.*
+![Departments Table](INSERT_DEPARTMENTS_IMAGE_NAME.png)
 
 ---
 
