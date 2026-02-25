@@ -1,36 +1,63 @@
-Parks and Recreation Department: Database Schema & Management
-Project Overview
-This project demonstrates the creation and management of a relational database system for the Pawnee Parks and Recreation Department. The goal was to design a structured environment to manage employee demographics, department details, and payroll data, ensuring data integrity and relational mapping between different organizational units.
+# 🏛️ Parks and Recreation: Database Schema & Management
 
-Technical Skills Demonstrated
-Database Design: Implementing Primary Keys and managing table relationships.
+## 📖 Table of Contents
+* [Project Overview](#-project-overview)
+* [Technical Skills Demonstrated](#-technical-skills-demonstrated)
+* [Database Architecture](#-database-architecture)
+* [Entity Relationship Logic](#-entity-relationship-logic)
+* [Data Preview](#-data-preview)
+* [How to Use](#-how-to-use)
 
-SQL DDL (Data Definition Language): Creating and structuring databases and tables using CREATE, DROP, and USE.
+---
 
-SQL DML (Data Manipulation Language): Populating datasets using INSERT INTO statements.
+## 📌 Project Overview
+This project demonstrates the creation and management of a relational database system for the **Pawnee Parks and Recreation Department**. The goal was to design a structured environment to manage employee demographics, department details, and payroll data, ensuring data integrity and relational mapping between different organizational units.
 
-Data Types & Constraints: Using appropriate data types (INT, VARCHAR, DATE) and constraints (NOT NULL, AUTO_INCREMENT).
+---
 
-Database Architecture
+## 🚀 Technical Skills Demonstrated
+* **Database Design:** Implementing Primary Keys and managing table relationships.
+* **SQL DDL (Data Definition Language):** Creating and structuring databases and tables using `CREATE`, `DROP`, and `USE`.
+* **SQL DML (Data Manipulation Language):** Populating datasets using `INSERT INTO` statements.
+* **Data Types & Constraints:** Using appropriate data types (`INT`, `VARCHAR`, `DATE`) and constraints (`NOT NULL`, `AUTO_INCREMENT`).
+
+---
+
+## 🏗️ Database Architecture
 The database consists of three primary tables designed to be joined for comprehensive reporting:
 
-Entity Relationship logic
-The Employee ID serves as the unique identifier linking demographics to salary data.
+| Table Name | Description | Key Columns |
+| :--- | :--- | :--- |
+| **`employee_demographics`** | Personal information (age, gender, birth date). | `employee_id` (PK) |
+| **`employee_salary`** | Professional data (occupation, salary, dept link). | `employee_id`, `dept_id` |
+| **`parks_departments`** | Department lookup table. | `department_id` (PK) |
 
-The Dept ID links employees to their respective department names in the lookup table, allowing for granular departmental analysis.
+[attachment_0](attachment)
 
-How to Use
-Ensure you have MySQL Workbench or any SQL client installed.
+### 🔗 Entity Relationship Logic
+1. **Employee Link:** The `employee_id` serves as the unique identifier linking demographics to salary data.
+2. **Department Link:** The `dept_id` in the salary table links to the `department_id` in the departments table, allowing for granular departmental analysis.
 
-Clone this repository.
+---
 
-Run the parks_and_recreation_setup.sql script to generate the database and populate it with the sample data provided.
+## 🖼️ Data Preview
 
-Future Analysis Goals
-With this foundation, the next steps for this project include:
+### Final Database Snapshot
+*Below is the result of the successfully populated relational database.*
+![Final Database Output](INSERT_YOUR_IMAGE_NAME_HERE.png)
 
-Performing JOIN operations to analyze the average salary per department.
+---
 
-Calculating the age distribution of employees using birth_date.
+## 🛠️ How to Use
+1. Ensure you have **MySQL Workbench** or any SQL client installed.
+2. Clone this repository.
+3. Run the `parks_and_recreation_setup.sql` script to generate the database and populate it with the sample data provided.
 
-Identifying top-earning roles within the Parks department vs. Finance.
+---
+
+## 📈 Future Analysis Goals
+With this foundation, the next steps include:
+* **JOIN Operations:** Analyzing average salary per department.
+* **Demographic Trends:** Calculating age distribution using `birth_date`.
+* **Financial Insights:** Identifying top-earning roles within the Parks department vs. Finance.
+* 
