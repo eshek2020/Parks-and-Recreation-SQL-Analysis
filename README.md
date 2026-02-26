@@ -44,15 +44,15 @@ The database consists of three primary tables designed to be joined for comprehe
 
 ### 1. Employee Demographics Table
 *Contains personal identifiable information for the department staff.*
-![Demographics Table](INSERT_DEMOGRAPHICS_IMAGE_NAME.png)
+![Demographics Table](employee demographics.png)
 
 ### 2. Employee Salary Table
 *Tracks roles, compensation, and departmental assignments.*
-![Salary Table](INSERT_SALARY_IMAGE_NAME.png)
+![Salary Table](employee salary.png)
 
 ### 3. Parks Departments Table
 *The lookup table for all official Pawnee departments.*
-![Departments Table](INSERT_DEPARTMENTS_IMAGE_NAME.png)
+![Departments Table](parks departments.png)
 
 ---
 
