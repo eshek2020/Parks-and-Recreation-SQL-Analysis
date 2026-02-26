@@ -3,10 +3,10 @@
 ## 📖 Table of Contents
 * [Project Overview](#-project-overview)
 * [Technical Skills Demonstrated](#-technical-skills-demonstrated)
-* [Database Architecture](#-database-architecture)
+* [Database Architecture](#%EF%B8%8F-database-architecture)
 * [Entity Relationship Logic](#-entity-relationship-logic)
-* [Data Preview](#-data-preview)
-* [How to Use](#-how-to-use)
+* [Data Preview](#%EF%B8%8F-data-preview)
+* [How to Use](#%EF%B8%8F-how-to-use)
 
 ---
 
@@ -26,8 +26,6 @@ This project demonstrates the creation and management of a relational database s
 ## 🏗️ Database Architecture
 The database consists of three primary tables designed to be joined for comprehensive reporting:
 
-
-
 | Table Name | Description | Key Columns |
 | :--- | :--- | :--- |
 | **`employee_demographics`** | Personal information (age, gender, birth date). | `employee_id` (PK) |
@@ -44,22 +42,22 @@ The database consists of three primary tables designed to be joined for comprehe
 
 ### 1. Employee Demographics Table
 *Contains personal identifiable information for the department staff.*
-![Demographics Table](employee demographics.png)
+![Demographics Table](employee%20demographics.png)
 
 ### 2. Employee Salary Table
 *Tracks roles, compensation, and departmental assignments.*
-![Salary Table](employee salary.png)
+![Salary Table](employee%20salary.png)
 
 ### 3. Parks Departments Table
 *The lookup table for all official Pawnee departments.*
-![Departments Table](parks departments.png)
+![Departments Table](parks%20departments.png)
 
 ---
 
 ## 🛠️ How to Use
 1. Ensure you have **MySQL Workbench** or any SQL client installed.
 2. Clone this repository.
-3. Run the `parks_and_recreation_setup.sql` script to generate the database and populate it with the sample data provided.
+3. Run the `Parks_And_Recreations.sql` script to generate the database and populate it with the sample data provided.
 
 ---
 
@@ -68,4 +66,3 @@ With this foundation, the next steps include:
 * **JOIN Operations:** Analyzing average salary per department.
 * **Demographic Trends:** Calculating age distribution using `birth_date`.
 * **Financial Insights:** Identifying top-earning roles within the Parks department vs. Finance.
-* 
