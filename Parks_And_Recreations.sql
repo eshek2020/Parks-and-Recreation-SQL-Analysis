@@ -6,7 +6,6 @@ USE `Parks_and_Recreation`;
 
 
 
-
 CREATE TABLE employee_demographics (
   employee_id INT NOT NULL,
   first_name VARCHAR(50),
@@ -16,16 +15,6 @@ CREATE TABLE employee_demographics (
   birth_date DATE,
   PRIMARY KEY (employee_id)
 );
-
-CREATE TABLE employee_salary (
-  employee_id INT NOT NULL,
-  first_name VARCHAR(50) NOT NULL,
-  last_name VARCHAR(50) NOT NULL,
-  occupation VARCHAR(50),
-  salary INT,
-  dept_id INT
-);
-
 
 INSERT INTO employee_demographics (employee_id, first_name, last_name, age, gender, birth_date)
 VALUES
@@ -41,6 +30,15 @@ VALUES
 (11, 'Mark', 'Brendanawicz', 40, 'Male', '1983-06-14'),
 (12, 'Craig', 'Middlebrooks', 37, 'Male', '1986-07-27');
 
+
+CREATE TABLE employee_salary (
+  employee_id INT NOT NULL,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  occupation VARCHAR(50),
+  salary INT,
+  dept_id INT
+);
 
 INSERT INTO employee_salary (employee_id, first_name, last_name, occupation, salary, dept_id)
 VALUES
